@@ -8,16 +8,16 @@ The aim of this assignment is to detect faces in an image, extract color-based f
 ## Methodology
 
 ### 1) Face Detection
-- Used OpenCV Haar Cascade classifier (`haarcascade_frontalface_default.xml`)
+- Used OpenCV Haar Cascade classifier
 - Converted image to grayscale for detection
 - Detected faces were marked with rectangles and labels
 
 ### 2) Feature Extraction
 - Converted face regions from BGR to HSV color space
-- Extracted mean **Hue** and **Saturation** values as features
+- Extracted mean Hue and Saturation values as features
 
 ### 3) Clustering
-- Applied **K-Means clustering (k = 2)** on extracted features
+- Applied K-Means clustering (k = 2) on extracted features
 - Visualized clusters and centroids in Hue–Saturation space
 
 ### 4) Template Image Classification
